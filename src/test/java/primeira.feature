@@ -1,16 +1,13 @@
 
 @tag
-Feature: Cirar grupo de conversa 
-	 usuario
-	Eu quero criar um novo grupo
-	Para falar com meus amigos em comum por um �nico caminhos
+Feature: Criar grupo de conversa 	 
+	Eu enquanto usuário quero criar um novo grupo para falar com meus amigos em comum por um único caminhos
   
   @tag1
-  Scenario: Deve apresentar a tela de preenchimento de nome do grupo 
+  Scenario: Deve apresentar a tela de criação grupo 
     Given Que estou na tela principal do whatsApp Web
     When Decido criar um novo grupo
-    Then Aplicativo redireciona para tela Nome do grupo
-   
+    Then sou redirecionado para tela de criação do grupo   
 
   @tag2
   Scenario: Deve criar o grupo de amigos pra conversa
