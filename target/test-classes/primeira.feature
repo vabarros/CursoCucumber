@@ -1,18 +1,16 @@
-
+# language : pt
 @tag
-Feature: Grupo de conversa 	 
-	Eu enquanto usuario quero manipular grupo de conversa para falar com meus amigos em comum.
-  
+Funcionalidade: Grupo de conversa
+  Eu enquanto usuario quero manipular grupo de conversa para falar com meus amigos em comum.
+
   @tag1
-  Scenario: Deve apresentar a tela de criacao grupo 
-    Given que estou na tela principal do whatsApp Web
-    When decido criar um novo grupo
-    Then sou redirecionado para tela de criacao do grupo   
+  Cenario: Deve apresentar a tela de criacao grupo
+    Dado que estou na tela principal do whatsApp Web
+    Quando decido criar um novo grupo
+    Entao sou redirecionado para tela de criacao do grupo
 
   @tag2
-  Scenario: Deve sair grupo de conversa
-    Given que estou na tela principal do whatsApp Web
-    When qecido sair do grupo de conversa
-    Then saio do grupo sem apagar as conversas ja exsitentes
-
-
+  Cenario: Deve sair grupo de conversa
+    Dado que estou na tela principal do whatsApp Web
+    Quando decido sair do grupo de conversa
+    Entao saio do grupo sem apagar as conversas ja exsitentes
